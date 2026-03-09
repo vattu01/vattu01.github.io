@@ -105,27 +105,7 @@ cursor:pointer;
 </style>
 
 <script>
-  function login(){
-
-let user=document.getElementById("login").value;
-let pass=document.getElementById("password").value;
-
-if(user=="admin" && pass=="1234"){
-
-document.getElementById("loginStatus").innerText="Успішний вхід";
-
-document.getElementById("devPanel").style.display="block";
-
-}
-
-else{
-
-document.getElementById("loginStatus").innerText="Невірний логін або пароль";
-
-}
-
-}
-  
+ 
 // Кнопка "Головна" - скролить на верх
 function goTop(){
   window.scrollTo({top: 0, behavior: 'smooth'});
@@ -146,25 +126,7 @@ function showMore(id){
 
 <body>
 
-  <div class="article">
-<h2>Вхід</h2>
 
-<input id="login" placeholder="Логін">
-<input id="password" type="password" placeholder="Пароль">
-
-<button onclick="login()">Увійти</button>
-
-<p id="loginStatus"></p>
-</div>
-
-  <div id="devPanel" style="display:none" class="article">
-<h2>Developer Panel</h2>
-
-<p>Цю сторінку бачать тільки розробники.</p>
-
-<a href="devtools.html">Відкрити dev tools</a>
-
-</div>
   
 <div class="sidebar">
   <a href="#" onclick="goTop()">Головна</a>
