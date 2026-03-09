@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Poshalko Site</title>
+<title>Персонажі</title>
 
 <style>
 
@@ -88,16 +88,20 @@ cursor:pointer;
 </style>
 
 <script>
+// Кнопка "Головна" - скролить на верх
+function goTop(){
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
 
+// Кнопка "Більше" для кожного персонажа
 function showMore(id){
-let t=document.getElementById(id);
-if(t.style.display=="none"){
-t.style.display="block";
-}else{
-t.style.display="none";
+  let t=document.getElementById(id);
+  if(t.style.display=="none"){
+    t.style.display="block";
+  }else{
+    t.style.display="none";
+  }
 }
-}
-
 </script>
 
 </head>
@@ -105,11 +109,12 @@ t.style.display="none";
 <body>
 
 <div class="sidebar">
-<a href="#characters">Персонажі</a>
+  <a href="#" onclick="goTop()">Головна</a>
+  <a href="#characters">Персонажі</a>
 
-<div class="footer">
-by Poshalko Studio
-</div>
+  <div class="footer">
+    by Poshalko Studio
+  </div>
 </div>
 
 <div class="content">
@@ -120,52 +125,70 @@ by Poshalko Studio
 <div id="characters" class="section">
 <h1>Персонажі</h1>
 
-
+<!-- Персонаж 1 -->
 <div class="character">
-
 <img src="images/character1.png">
-
 <div class="charText">
-
-<h2>Ім'я персонажа</h2>
-
-<p>
-Короткий опис персонажа.
-</p>
-
+<h2>Ім'я персонажа 1</h2>
+<p>Короткий опис персонажа 1.</p>
 <p id="more1" class="moreText">
-Тут буде додатковий текст статті про персонажа.
+Тут додатковий текст статті про персонажа 1.
 </p>
-
 <button onclick="showMore('more1')">Більше</button>
-
 </div>
 </div>
 
-
-
+<!-- Персонаж 2 -->
 <div class="character">
-
 <img src="images/character2.png">
-
 <div class="charText">
-
-<h2>Ім'я персонажа</h2>
-
-<p>
-Короткий опис персонажа.
-</p>
-
+<h2>Ім'я персонажа 2</h2>
+<p>Короткий опис персонажа 2.</p>
 <p id="more2" class="moreText">
-Додатковий текст статті.
+Тут додатковий текст статті про персонажа 2.
 </p>
-
 <button onclick="showMore('more2')">Більше</button>
-
 </div>
 </div>
 
+<!-- Персонаж 3 -->
+<div class="character">
+<img src="images/character3.png">
+<div class="charText">
+<h2>Ім'я персонажа 3</h2>
+<p>Короткий опис персонажа 3.</p>
+<p id="more3" class="moreText">
+Тут додатковий текст статті про персонажа 3.
+</p>
+<button onclick="showMore('more3')">Більше</button>
+</div>
+</div>
 
+<!-- Персонаж 4 -->
+<div class="character">
+<img src="images/character4.png">
+<div class="charText">
+<h2>Ім'я персонажа 4</h2>
+<p>Короткий опис персонажа 4.</p>
+<p id="more4" class="moreText">
+Тут додатковий текст статті про персонажа 4.
+</p>
+<button onclick="showMore('more4')">Більше</button>
+</div>
+</div>
+
+<!-- Персонаж 5 -->
+<div class="character">
+<img src="images/character5.png">
+<div class="charText">
+<h2>Ім'я персонажа 5</h2>
+<p>Короткий опис персонажа 5.</p>
+<p id="more5" class="moreText">
+Тут додатковий текст статті про персонажа 5.
+</p>
+<button onclick="showMore('more5')">Більше</button>
+</div>
+</div>
 
 </div>
 </div>
