@@ -2,35 +2,41 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Мій сайт</title>
+<title>самий крутий сайт якій ти міг уявити</title>
 
 <style>
+
 body{
 margin:0;
 font-family:Arial;
 background:linear-gradient(135deg,#1e3c72,#2a5298);
 color:white;
-text-align:center;
 }
 
-nav{
+.sidebar{
+height:100vh;
+width:200px;
+position:fixed;
+left:0;
+top:0;
 background:#111;
-padding:15px;
+padding-top:20px;
 }
 
-nav a{
+.sidebar a{
+display:block;
 color:white;
-margin:15px;
+padding:15px;
 text-decoration:none;
-font-size:18px;
 }
 
-nav a:hover{
-color:#00ffd5;
+.sidebar a:hover{
+background:#333;
 }
 
-.container{
-margin-top:100px;
+.content{
+margin-left:220px;
+padding:40px;
 }
 
 button{
@@ -42,9 +48,6 @@ background:#00ffd5;
 cursor:pointer;
 }
 
-button:hover{
-background:#00c8a8;
-}
 </style>
 
 <script>
@@ -57,15 +60,15 @@ alert("Ти натиснув кнопку 😎");
 
 <body>
 
-<nav>
+<div class="sidebar">
 <a href="#">Головна</a>
 <a href="#">Про мене</a>
 <a href="#">Контакти</a>
-</nav>
+</div>
 
-<div class="container">
-<h1>Ласкаво прошу на мій сайт</h1>
-<p>Я зробив його сам 😎</p>
+<div class="content">
+<h1>Ласкаво прошу</h1>
+<p>Це мій сайт</p>
 
 <button onclick="hello()">Натисни</button>
 </div>
