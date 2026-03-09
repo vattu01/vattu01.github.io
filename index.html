@@ -1,12 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
 <title>Мій сайт</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:linear-gradient(135deg,#1e3c72,#2a5298);
+color:white;
+text-align:center;
+}
+
+nav{
+background:#111;
+padding:15px;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-size:18px;
+}
+
+nav a:hover{
+color:#00ffd5;
+}
+
+.container{
+margin-top:100px;
+}
+
+button{
+padding:15px 30px;
+font-size:18px;
+border:none;
+border-radius:10px;
+background:#00ffd5;
+cursor:pointer;
+}
+
+button:hover{
+background:#00c8a8;
+}
+</style>
+
+<script>
+function hello(){
+alert("Ти натиснув кнопку 😎");
+}
+</script>
+
 </head>
+
 <body>
 
-<h1>Привіт!</h1>
-<p>Це мій сайт.</p>
+<nav>
+<a href="#">Головна</a>
+<a href="#">Про мене</a>
+<a href="#">Контакти</a>
+</nav>
+
+<div class="container">
+<h1>Ласкаво прошу на мій сайт</h1>
+<p>Я зробив його сам 😎</p>
+
+<button onclick="hello()">Натисни</button>
+</div>
 
 </body>
 </html>
